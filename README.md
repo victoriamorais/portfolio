@@ -1,2 +1,2 @@
-# victoria-msa
-My portfolio to show my work
+# Victoria's portfolio
+Portfolio containing my work as a Designer.
