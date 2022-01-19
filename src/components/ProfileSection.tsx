@@ -11,19 +11,21 @@ export default function ProfileSection() {
           <Grid item xs={12} sm={8} md={7} lg={6}>
             <Stack spacing={3} height="100%">
               <Stack flexGrow={1} justifyContent="center">
-                <Typography variant="h3" fontWeight={700} mb={.75}>Hello! ;D</Typography>
+                <Typography variant="h3" fontWeight={700} mb={.75}>Hello! 🤘🏻</Typography>
                 <Typography variant="h3" fontWeight={700} mb={3}>I'm Victoria Morais</Typography>
-                <Typography variant="body1" fontWeight={300} mb={1.5}>I'm a designer with UX/UI and product skills with more than 3 years of experience in industry, education and e-commerce. I'm currently working at Whirlpool and my objective is to contribute with my knowledge and skills to deliver the best solution for business and people needs.</Typography>
-                <Typography variant="body1" fontWeight={500}>Product discovery • Usability • User centered design</Typography>
+                <Typography variant="body1" fontWeight={300} mb={2.25}>I'm a designer with UX/UI and product skills with more than 3 years of experience in industry, education and e-commerce. I'm currently working at Whirlpool and my objective is to contribute with my knowledge and skills to deliver the best solution for business and people needs.</Typography>
+                <Grid container spacing={3}>
+                  <Grid item xs={12} sm="auto">
+                    <Typography variant="body2" fontWeight={500}>❤️ Product Discovery</Typography>
+                  </Grid>
+                  <Grid item xs={12} sm="auto">
+                    <Typography variant="body2" fontWeight={500}>📚 UX Research</Typography>
+                  </Grid>
+                  <Grid item xs={12} sm="auto">
+                    <Typography variant="body2" fontWeight={500}>💪🏻 UX/UI Design</Typography>
+                  </Grid>
+                </Grid>
               </Stack>
-              <Box textAlign="right">
-                <Link variant="body1" sx={{
-                  fontWeight: 500,
-                  '&:after': {
-                    content: '" >"'
-                  }
-                }}>See complete profile</Link>
-              </Box>
             </Stack>
           </Grid>
           <Grid item xs={12} sm={4} lg="auto">
