@@ -2,7 +2,16 @@ import { ThemeOptions } from '@mui/material/styles';
 
 const lightTheme: ThemeOptions = {
   palette: {
-    mode: 'light'
+    mode: 'light',
+    primary: {
+      main: '#1a1b1f',
+      light: '#404246',
+      dark: '#010101'
+    },
+    text: {
+      primary: '#1a1b1f',
+      secondary: '#1a1b1f'
+    }
   },
   typography: {
     fontFamily: [
