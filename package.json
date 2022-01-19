@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "2.0.0",
   "description": "Portfolio containing my work as a designer.",
-  "homepage": "https://victoriamorais.github.io",
+  "homepage": "https://victoriamorais.github.io/portfolio",
   "repository": {
     "type": "git",
     "url": "https://github.com/victoriamorais/portfolio.git"
@@ -26,9 +26,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
