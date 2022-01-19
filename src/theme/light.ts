@@ -3,6 +3,10 @@ import { ThemeOptions } from '@mui/material/styles';
 const lightTheme: ThemeOptions = {
   palette: {
     mode: 'light',
+    common: {
+      black: '#010101',
+      white: '#fff'
+    },
     primary: {
       main: '#1a1b1f',
       light: '#404246',

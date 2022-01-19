@@ -1,70 +1,10 @@
-import { Fragment } from 'react';
-
-import PageNavbar from '../components/PageNavbar';
+import PageWrapper from '../components/PageWrapper';
+import ProfileSection from '../components/ProfileSection';
 
 export default function Home() {
   return (
-    <Fragment>
-      <PageNavbar />
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-      <p>ABC</p>
-    </Fragment>
+    <PageWrapper>
+      <ProfileSection />
+    </PageWrapper>
   );
 }
