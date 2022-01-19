@@ -12,6 +12,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Home />} />
       </Routes>
     </ThemeProvider>
   );
