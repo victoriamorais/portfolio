@@ -1,10 +1,19 @@
 import { ThemeOptions } from '@mui/material/styles';
 
-const lightTheme: ThemeOptions = {
+const theme: ThemeOptions = {
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 640,
+      md: 960,
+      lg: 1280,
+      xl: 1920
+    }
+  },
   palette: {
     mode: 'light',
     common: {
-      black: '#010101',
+      black: '#242424',
       white: '#fff'
     },
     primary: {
@@ -14,7 +23,12 @@ const lightTheme: ThemeOptions = {
     },
     text: {
       primary: '#1a1b1f',
-      secondary: '#1a1b1f'
+      secondary: '#7c7c7c'
+    },
+    divider: '#7c7c7c',
+    background: {
+      paper: '#fff',
+      default: '#f9f9f9'
     }
   },
   typography: {
@@ -22,16 +36,7 @@ const lightTheme: ThemeOptions = {
       'Montserrat',
       'sans-serif'
     ].join(',')
-  },
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        sizeLarge: {
-          padding: '14px 28px'
-        }
-      }
-    }
   }
 };
 
-export default lightTheme;
+export default theme;

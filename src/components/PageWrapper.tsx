@@ -12,7 +12,7 @@ export default function PageWrapper({ children }: Props) {
   return (
     <Stack minHeight="100vh">
       <PageNavbar />
-      <Box flexGrow={1} my={6}>
+      <Box flexGrow={1}>
         {children}
       </Box>
       <PageFooter />
