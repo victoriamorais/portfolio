@@ -3,7 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 
 import mixedTheme from '../theme/mixed'
 
-import Home from '../pages/Home'
+import AppRouter from './AppRouter'
 
 let theme = createTheme(mixedTheme)
 theme = responsiveFontSizes(theme)
@@ -12,7 +12,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Home />
+      <AppRouter />
     </ThemeProvider>
   )
 }
