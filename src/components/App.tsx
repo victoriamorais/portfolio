@@ -1,17 +1,15 @@
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles'
-import CssBaseline from '@mui/material/CssBaseline'
-
-import mixedTheme from '../theme/mixed'
 
 import AppRouter from './AppRouter'
 
-let theme = createTheme(mixedTheme)
+import lightTheme from '../theme/light'
+
+let theme = createTheme(lightTheme)
 theme = responsiveFontSizes(theme)
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
       <AppRouter />
     </ThemeProvider>
   )

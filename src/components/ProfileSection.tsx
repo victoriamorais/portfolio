@@ -5,9 +5,9 @@ import ProfilePicture from '../images/profile-picture.png'
 export default function ProfileSection() {
   return (
     <Box component="section" sx={({ palette: { common: { black, white } } }) => ({
+      bgcolor: black,
       pt: 6,
       pb: 8,
-      bgcolor: black,
       color: white,
     })}>
       <h3 hidden>Profile</h3>

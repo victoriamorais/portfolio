@@ -1,15 +1,10 @@
 import { ThemeOptions } from '@mui/material/styles'
 
+import typography from './config/typography'
+import breakpoints from './config/breakpoints'
+import components from './config/components'
+
 const theme: ThemeOptions = {
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 640,
-      md: 960,
-      lg: 1280,
-      xl: 1920,
-    }
-  },
   palette: {
     mode: 'light',
     common: {
@@ -31,12 +26,9 @@ const theme: ThemeOptions = {
       default: '#f9f9f9',
     }
   },
-  typography: {
-    fontFamily: [
-      'Montserrat',
-      'sans-serif',
-    ].join(',')
-  }
+  typography,
+  breakpoints,
+  components,
 }
 
 export default theme
