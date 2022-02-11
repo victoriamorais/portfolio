@@ -2,7 +2,7 @@ import { Box, Container, Stack } from '@mui/material'
 
 import ProjectCard from './ProjectCard'
 
-import BastempCover from '../images/projects/brastemp-cover.png'
+import BrastempThumb from '../images/projects/brastemp-experience/thumb.png'
 import VuptCover from '../images/projects/vupt-cover.png'
 import SkillAssessmentCover from '../images/projects/skillassessment-cover.png'
 
@@ -17,10 +17,10 @@ export default function WorkSection() {
             title="Brastemp Experience"
             description="Most recently activities I participated working at whirlpool's Brastemp brand improving the customer experience."
             role="Product Designer"
-            imgSrc={BastempCover}
+            imgSrc={BrastempThumb}
             imgAlt="Brastemp cover"
             imgPos="right"
-            href="/brastemp-experience"
+            href="/work/brastemp-experience"
           />
           <ProjectCard
             company="Validation concept"

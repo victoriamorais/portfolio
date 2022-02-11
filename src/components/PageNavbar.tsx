@@ -32,7 +32,7 @@ export default function PageNavbar() {
             },
           })} id="btnWork">Home</Button>
           <Button component={Link} to="/contact" color="inherit" sx={(theme) => ({
-            mr: .75,
+            mr: 1.5,
             ml: .75,
             '&:hover': {
               bgcolor: alpha(theme.palette.common.white, .3),

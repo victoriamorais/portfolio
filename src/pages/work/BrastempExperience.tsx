@@ -1,13 +1,13 @@
 import { Container, Grid, Paper, Stack, Typography } from '@mui/material'
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles'
 
-import PageWrapper from '../components/PageWrapper'
-import ProjectCover from '../components/ProjectCover'
-import ContentNavbar from '../components/ContentNavbar'
+import PageWrapper from '../../components/PageWrapper'
+import ProjectCover from '../../components/ProjectCover'
+import ContentNavbar from '../../components/ContentNavbar'
 
-import Cover from '../images/projects/brastemp-experience/cover.png'
+import Cover from '../../images/projects/brastemp-experience/cover.png'
 
-import brastempTheme from '../theme/brastemp'
+import brastempTheme from '../../theme/brastemp'
 
 let theme = createTheme(brastempTheme)
 theme = responsiveFontSizes(theme)
@@ -26,13 +26,13 @@ export default function BrastempExperience() {
           anchorId: 'overview',
         }, {
           label: 'Discovery',
-          anchorId: '',
+          anchorId: 'discovery',
         }, {
           label: 'Validation and Ideate',
-          anchorId: '',
+          anchorId: 'validationAndIdeate',
         }, {
           label: 'Results and Learnings',
-          anchorId: '',
+          anchorId: 'resultsAndLearnings',
         }]} />
         <Container>
           <Stack spacing={8}>

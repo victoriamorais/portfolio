@@ -23,8 +23,8 @@ export default function ContentNavbar({ items }: Props) {
       pt: 8,
       pb: 9,
     }}>
-      {items.map((item) => (
-        <NavbarLink color="primary" typography="body1">{item.label}</NavbarLink>
+      {items.map((item, index) => (
+        <NavbarLink key={index} color="primary" typography="body1">{item.label}</NavbarLink>
       ))}
     </Box>
   )
