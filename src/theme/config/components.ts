@@ -5,6 +5,7 @@ const components: Components = {
     styleOverrides: {
       root: {
         minHeight: 88,
+        fontSize: 20
       },
     },
   },

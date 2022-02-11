@@ -7,7 +7,14 @@ const NavbarLink = styled(Link)(() => ({
   fontWeight: 500,
 }))
 
-export default function ContentNavbar() {
+type Props = {
+  items: Array<{
+    label: string
+    anchorId: string
+  }>
+}
+
+export default function ContentNavbar({ items }: Props) {
   return (
     <Box component="nav" sx={{
       display: 'flex',
@@ -16,10 +23,9 @@ export default function ContentNavbar() {
       pt: 8,
       pb: 9,
     }}>
-      <NavbarLink color="primary" typography="body1">Overview</NavbarLink>
-      <NavbarLink color="primary" typography="body1">Discovery</NavbarLink>
-      <NavbarLink color="primary" typography="body1">Validation and Ideate</NavbarLink>
-      <NavbarLink color="primary" typography="body1">Results and Learnings</NavbarLink>
+      {items.map((item) => (
+        <NavbarLink color="primary" typography="body1">{item.label}</NavbarLink>
+      ))}
     </Box>
   )
 }

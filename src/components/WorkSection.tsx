@@ -20,6 +20,7 @@ export default function WorkSection() {
             imgSrc={BastempCover}
             imgAlt="Brastemp cover"
             imgPos="right"
+            href="/brastemp-experience"
           />
           <ProjectCard
             company="Validation concept"
@@ -29,6 +30,7 @@ export default function WorkSection() {
             imgSrc={VuptCover}
             imgAlt="Vupt cover"
             imgPos="left"
+            href="/"
           />
           <ProjectCard
             company="Gama Academy"
@@ -38,6 +40,7 @@ export default function WorkSection() {
             imgSrc={SkillAssessmentCover}
             imgAlt="Skill Assessment cover"
             imgPos="right"
+            href="/"
           />
         </Stack>
       </Container>

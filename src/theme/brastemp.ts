@@ -1,10 +1,8 @@
 import { ThemeOptions } from '@mui/material/styles'
 
-import breakpoints from './config/breakpoints'
 import typography from './config/typography'
 
 const theme: ThemeOptions = {
-  breakpoints,
   palette: {
     mode: 'light',
     common: {
@@ -22,8 +20,8 @@ const theme: ThemeOptions = {
     },
     divider: '#e5e5e5',
     background: {
-      paper: '#fff',
-      default: '#f9f9f9',
+      paper: '#f9f9f9',
+      default: '#fff',
     }
   },
   typography,

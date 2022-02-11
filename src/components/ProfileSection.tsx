@@ -12,7 +12,7 @@ export default function ProfileSection() {
     })}>
       <h3 hidden>Profile</h3>
       <Container>
-        <Grid container spacing={3} alignItems="stretch" justifyContent="space-between">
+        <Grid container spacing={3} alignItems="stretch" justifyContent="space-evenly" sx={{ minHeight: '60vh' }}>
           <Grid item xs={12} sm={7} lg={6}>
             <Stack spacing={3} height="100%">
               <Stack flexGrow={1} justifyContent="center">

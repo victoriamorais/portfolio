@@ -1,3 +1,4 @@
+import { CssBaseline } from '@mui/material'
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles'
 
 import AppRouter from './AppRouter'
@@ -10,6 +11,7 @@ theme = responsiveFontSizes(theme)
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <AppRouter />
     </ThemeProvider>
   )

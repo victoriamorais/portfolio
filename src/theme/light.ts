@@ -1,8 +1,6 @@
 import { ThemeOptions } from '@mui/material/styles'
 
 import typography from './config/typography'
-import breakpoints from './config/breakpoints'
-import components from './config/components'
 
 const theme: ThemeOptions = {
   palette: {
@@ -22,13 +20,11 @@ const theme: ThemeOptions = {
     },
     divider: '#7c7c7c',
     background: {
-      paper: '#fff',
-      default: '#f9f9f9',
+      paper: '#f9f9f9',
+      default: '#fff',
     }
   },
   typography,
-  breakpoints,
-  components,
 }
 
 export default theme

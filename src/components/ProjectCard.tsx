@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
 
 type Props = {
@@ -8,9 +9,10 @@ type Props = {
   imgSrc: string
   imgAlt: string
   imgPos?: 'right' | 'left'
+  href: string
 }
 
-export default function ProjectCard({ company, title, description, role, imgSrc, imgAlt, imgPos = 'right' }: Props) {
+export default function ProjectCard({ company, title, description, role, imgSrc, imgAlt, imgPos = 'right', href }: Props) {
   return (
     <Card elevation={0} sx={(theme) => ({
       borderRadius: 0,
@@ -25,7 +27,7 @@ export default function ProjectCard({ company, title, description, role, imgSrc,
         mx: -2,
       },
     })}>
-      <CardActionArea sx={(theme) => ({
+      <CardActionArea component={Link} to={href} sx={(theme) => ({
         [theme.breakpoints.up('md')]: {
           display: 'flex',
           flexDirection: (imgPos === 'right') ? 'row' : 'row-reverse',

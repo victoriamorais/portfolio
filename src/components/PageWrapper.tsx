@@ -3,6 +3,7 @@ import { Box, Stack } from '@mui/material'
 
 import PageNavbar from './PageNavbar'
 import PageFooter from './PageFooter'
+import ScrollTopButton from './ScrollTopButton'
 
 type Props = {
   children: ReactNode
@@ -16,6 +17,7 @@ export default function PageWrapper({ children }: Props) {
         {children}
       </Box>
       <PageFooter />
+      <ScrollTopButton />
     </Stack>
   )
 }

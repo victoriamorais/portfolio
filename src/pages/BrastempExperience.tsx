@@ -2,7 +2,7 @@ import { Container, Grid, Paper, Stack, Typography } from '@mui/material'
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles'
 
 import PageWrapper from '../components/PageWrapper'
-import ProjectMainCover from '../components/ProjectMainCover'
+import ProjectCover from '../components/ProjectCover'
 import ContentNavbar from '../components/ContentNavbar'
 
 import Cover from '../images/projects/brastemp-experience/cover.png'
@@ -16,18 +16,30 @@ export default function BrastempExperience() {
   return (
     <PageWrapper>
       <ThemeProvider theme={theme}>
-        <ProjectMainCover
+        <ProjectCover
           title="Technical assistance location"
-          description="How we improve the service and make the searching process of a technical assistance more efficient"
-          cover={Cover}
+          description="How we improved the service and make the searching process of a technical assistance more efficient"
+          image={Cover}
         />
-        <ContentNavbar />
+        <ContentNavbar items={[{
+          label: 'Overview',
+          anchorId: 'overview',
+        }, {
+          label: 'Discovery',
+          anchorId: '',
+        }, {
+          label: 'Validation and Ideate',
+          anchorId: '',
+        }, {
+          label: 'Results and Learnings',
+          anchorId: '',
+        }]} />
         <Container>
           <Stack spacing={8}>
-            <Grid container spacing={6} alignItems="center">
+            <Grid container spacing={6} alignItems="center" component="article" id="overview">
               <Grid item xs={12} md={6}>
                 <Stack spacing={2}>
-                  <Typography component="h4" variant="h4" color="primary" fontWeight={600}>Overview</Typography>
+                  <Typography component="h4" variant="h4" color="primary" fontWeight={600} id="#overview">Overview</Typography>
                   <Typography component="p" variant="body1" color="text.secondary" fontWeight={300}>I was responsible for the product discovery process and when it had been concluded the team choosed the next squad's mission: to improve the location service of the technical assistants. This service shows the closest assistance in the user region, it helps users when they have a problem with their home appliance and need to repair it.
                   </Typography>
                 </Stack>
