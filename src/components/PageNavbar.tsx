@@ -24,20 +24,20 @@ export default function PageNavbar() {
         <Box component="nav" sx={{
           mr: -1.75,
         }}>
-          <Button component={Link} to="/" color="inherit" sx={(theme) => ({
+          <Button component={Link} color="inherit" sx={(theme) => ({
             mr: .75,
             ml: .75,
             '&:hover': {
               bgcolor: alpha(theme.palette.common.white, .3),
             },
-          })} id="btnWork">Home</Button>
-          <Button component={Link} to="/contact" color="inherit" sx={(theme) => ({
+          })} to="/" id="btnWork">Home</Button>
+          <Button component={Link} color="inherit" sx={(theme) => ({
             mr: 1.5,
             ml: .75,
             '&:hover': {
               bgcolor: alpha(theme.palette.common.white, .3),
             },
-          })} id="btnContact">Contact</Button>
+          })} to="/contact" id="btnContact">Contact</Button>
           <Tooltip title="Medium" TransitionComponent={Zoom}>
             <IconButton color="inherit" href="https://medium.com/@moraes_victoria" target="_blank" sx={(theme) => ({
               mr: .75,

@@ -17,7 +17,7 @@ export default function ScrollTopButton() {
 
   return (
     <Zoom in={scrolled}>
-      <Box position="fixed" right={24} bottom={16}>
+      <Box position="fixed" right={24} bottom={24}>
         <Fab color="primary" sx={{
           flexFlow: 'column',
           width: 64,

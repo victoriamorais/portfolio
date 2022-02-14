@@ -12,7 +12,7 @@ export default function ContactSection() {
     })}>
       <h3 hidden>Contact</h3>
       <Container>
-        <Grid container spacing={3} alignItems="center" justifyContent="space-evenly" sx={{ minHeight: '64vh' }}>
+        <Grid container spacing={3} alignItems="center" justifyContent="space-around" sx={{ minHeight: '64vh' }}>
           <Grid item xs={12} md="auto">
             <Stack flexGrow={1} spacing={.75} justifyContent="center">
               <Typography variant="h3" fontWeight={700}>Enjoy my work?</Typography>
